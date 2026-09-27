@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tina NGO - Data Analyst &amp; Automatisation</title>
+<title>Tina NGO — Data Analyst &amp; Automatisation</title>
 <meta name="description" content="Portfolio de Tina NGO, pipelines de données automatisés, machine learning et ingénierie de flux.">
-<meta name="theme-color" content="#FFB8D9">
-<meta property="og:title" content="Tina NGO - Data Analyst & Automatisation">
+<meta name="theme-color" content="#FFBDD8">
+<meta property="og:title" content="Tina NGO — Data Analyst &amp; Automatisation">
 <meta property="og:description" content="Portfolio de projets data engineering, machine learning et automatisation.">
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     theme: {
       extend: {
         colors: {
-          bg: '#FFB8D9', ink: '#CC1D6F', plum: '#3D0F28', surface: '#FFFFFF',
+          bg: '#FFBDD8', ink: '#CC1D6F', plum: '#3D0F28', surface: '#FFFFFF',
           blush: '#FFE9F2', line: '#F1A0CB', muted: '#93476B', term: '#1F0F1A', cyan: '#6EE7D8'
         },
         fontFamily: { sans: ['Space Grotesk','sans-serif'], mono: ['Space Mono','monospace'] }
@@ -28,16 +28,24 @@
   }
 </script>
 <style>
-  body{font-family:'Space Grotesk',sans-serif;background-color:#FFB8D9;background-image:radial-gradient(rgba(204,29,111,.14) 1px,transparent 1px);background-size:24px 24px}
-  ::selection{background:#CC1D6F;color:#fff}
-  ::-webkit-scrollbar{width:8px}
-  ::-webkit-scrollbar-track{background:#FFB8D9}
-  ::-webkit-scrollbar-thumb{background:#F1A0CB;border-radius:4px}
-  a:focus-visible,button:focus-visible{outline:2px solid #CC1D6F;outline-offset:3px;border-radius:2px}
-  .badge{display:inline-flex;align-items:center;padding:.35rem .8rem;border-radius:9999px;background:#FFFFFF;border:1px solid #F1A0CB;color:#93476B;font-size:.75rem;font-weight:500;transition:all .3s}
-  .badge:hover{border-color:#CC1D6F;color:#CC1D6F}
-  .badge-accent{background:#FFE9F2;color:#CC1D6F;border-color:#F6BEDD}
-  @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #FFBDD8;
+    background-image: 
+      radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.25) 1px, transparent 2px),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpath d='M30,30 Q45,15 60,30 Q75,45 60,60 Q45,75 30,60 Q15,45 30,30 Z M30,30 Q30,5 50,20 Q35,35 30,30 Z M60,60 Q80,45 75,25 Q60,35 60,60 Z M60,60 Q45,85 25,75 Q35,60 60,60 Z M90,90 Q105,75 120,90 Q105,105 90,90 Z M0,0 Q15,-15 30,0 Q15,15 0,0 Z' fill='none' stroke='%23FFFFFF' stroke-width='1.2' stroke-linecap='round' stroke-dasharray='1 4' opacity='0.22'/%3E%3Ccircle cx='60' cy='30' r='2' fill='%23FFFFFF' opacity='0.25'/%3E%3Ccircle cx='30' cy='60' r='2' fill='%23FFFFFF' opacity='0.25'/%3E%3Ccircle cx='90' cy='90' r='2' fill='%23FFFFFF' opacity='0.25'/%3E%3C/svg%3E");
+    background-size: 24px 24px, 120px 120px;
+    background-attachment: fixed;
+  }
+  ::selection { background: #CC1D6F; color: #fff; }
+  ::-webkit-scrollbar { width: 8px; }
+  ::-webkit-scrollbar-track { background: #FFBDD8; }
+  ::-webkit-scrollbar-thumb { background: #F1A0CB; border-radius: 4px; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #CC1D6F; outline-offset: 3px; border-radius: 2px; }
+  .badge { display: inline-flex; align-items: center; padding: .35rem .8rem; border-radius: 9999px; background: #FFFFFF; border: 1px solid #F1A0CB; color: #93476B; font-size: .75rem; font-weight: 500; transition: all .3s; }
+  .badge:hover { border-color: #CC1D6F; color: #CC1D6F; }
+  .badge-accent { background: #FFE9F2; color: #CC1D6F; border-color: #F6BEDD; }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms!important; animation-iteration-count: 1!important; transition-duration: .01ms!important; } }
 </style>
 </head>
 <body class="bg-bg text-plum antialiased">
@@ -103,6 +111,7 @@
   <section id="projets" class="max-w-6xl mx-auto px-6 py-20 md:py-28 border-t border-line">
     <h2 class="text-2xl md:text-3xl font-bold text-ink mb-14">Projets Réalisés</h2>
 
+    <!-- Projet 1 -->
     <article class="grid lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300 mb-8">
       <div>
         <span class="badge badge-accent">Data Engineering &amp; Automatisation</span>
@@ -145,7 +154,8 @@
       </div>
     </article>
 
-    <article class="grid lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300">
+    <!-- Projet 2 -->
+    <article class="grid lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300 mb-8">
       <div>
         <span class="badge badge-accent">Machine Learning &amp; Data Processing</span>
         <h3 class="text-xl md:text-2xl font-bold text-ink mt-4 mb-3">Telco Churn — Préparation &amp; Scoring Prédictif</h3>
@@ -183,6 +193,22 @@
           </div>
         </div>
       </div>
+    </article>
+
+    <!-- Projet 3 -->
+    <article class="p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300">
+      <div class="flex flex-col md:flex-row justify-between md:items-center gap-4 mb-4">
+        <div>
+          <span class="badge badge-accent">Data Processing &amp; Visualisation</span>
+          <h3 class="text-xl md:text-2xl font-bold text-ink mt-2">Data For Good — MerTerre</h3>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">Data Cleaning</span><span class="badge">Dashboarding</span>
+        </div>
+      </div>
+      <p class="text-plum/80 leading-relaxed max-w-3xl">
+        Nettoyage, structuration et fiabilisation sous Python des données de collecte terrain pour alimenter le tableau de bord interactif de suivi et de réduction des déchets sauvages.
+      </p>
     </article>
   </section>
 
@@ -248,7 +274,7 @@
         <i class="fa-solid fa-chart-pie text-ink text-lg mb-4" aria-hidden="true"></i>
         <h3 class="text-plum font-semibold mb-4">Analytics &amp; Outils Business</h3>
         <ul class="space-y-2 text-sm text-plum/70">
-          <li>Power BI</li><li>Google Analytics 4 (GA4)</li><li>Google Tag Manager (GTM)</li><li>Excel avancé</li>
+          <li>Power BI &amp; Power Platform</li><li>Google Analytics 4 (GA4)</li><li>Google Ads</li><li>Excel avancé (modélisation, TCD)</li>
         </ul>
       </div>
       <div class="p-6 rounded-2xl bg-surface border border-line">
@@ -276,10 +302,10 @@
     <div class="mt-8">
       <h3 class="text-plum font-semibold mb-4">Certifications</h3>
       <div class="flex flex-wrap gap-2">
-        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Microsoft Power BI</span>
-        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Google Analytics (GAIQ)</span>
-        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Excel 2019 Associate</span>
-        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Score Enablers RGPD</span>
+        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Microsoft Certified: Power Platform Fundamentals (Power BI)</span>
+        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Microsoft Office Specialist: Excel 2019 Associate (Score 850/1000)</span>
+        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Google Analytics Certification (GA4)</span>
+        <span class="badge badge-accent"><i class="fa-solid fa-certificate mr-1.5" aria-hidden="true"></i>Google Ads Search Certification</span>
       </div>
     </div>
   </section>
@@ -289,14 +315,15 @@
   <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
     <h2 class="text-2xl md:text-3xl font-bold text-ink mb-3">Discutons de votre prochain projet data.</h2>
     <p class="text-plum/80 mb-8 max-w-xl">Disponible pour un stage de fin d'études de 6 mois dès janvier 2027.</p>
-    <div class="flex flex-wrap gap-3 mb-16">
+    <div class="flex flex-wrap gap-3 mb-12">
       <a href="https://www.linkedin.com/in/vankimtina/" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-brands fa-linkedin text-ink" aria-hidden="true"></i> LinkedIn</a>
       <a href="https://github.com/tina-devinci" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-brands fa-github text-ink" aria-hidden="true"></i> GitHub</a>
       <a href="mailto:tina.ngo@edu.devinci.fr" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-solid fa-envelope text-ink" aria-hidden="true"></i> tina.ngo@edu.devinci.fr</a>
     </div>
-    <div class="flex flex-wrap gap-x-6 gap-y-1 text-xs text-muted mb-6">
-      <span><i class="fa-solid fa-language mr-1.5" aria-hidden="true"></i>Français — Langue maternelle</span>
-      <span><i class="fa-solid fa-language mr-1.5" aria-hidden="true"></i>Anglais — C1, TOEIC 965/990</span>
+    <div class="flex flex-wrap gap-2 mb-10">
+      <span class="badge"><i class="fa-solid fa-language mr-1.5" aria-hidden="true"></i>Anglais — C1, TOEIC 965/990</span>
+      <span class="badge"><i class="fa-solid fa-language mr-1.5" aria-hidden="true"></i>Français — Langue maternelle</span>
+      <span class="badge"><i class="fa-solid fa-language mr-1.5" aria-hidden="true"></i>Vietnamien — B1</span>
     </div>
     <div class="pt-8 border-t border-line text-xs text-muted">
       © 2026 Tina NGO — Portfolio Data Analyst
