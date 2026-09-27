@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tina NGO — Data Analyst &amp; Automatisation</title>
+<meta name="description" content="Portfolio de Tina NGO — pipelines de données automatisés, machine learning et ingénierie de flux.">
+<meta name="theme-color" content="#FFB8D9">
+<meta property="og:title" content="Tina NGO — Data Analyst & Automatisation">
+<meta property="og:description" content="Portfolio de projets data engineering, machine learning et automatisation.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: '#FFB8D9', ink: '#CC1D6F', plum: '#3D0F28', surface: '#FFFFFF',
+          blush: '#FFE9F2', line: '#F1A0CB', muted: '#93476B', term: '#1F0F1A', cyan: '#6EE7D8'
+        },
+        fontFamily: { sans: ['Space Grotesk','sans-serif'], mono: ['Space Mono','monospace'] }
+      }
+    }
+  }
+</script>
+<style>
+  body{font-family:'Space Grotesk',sans-serif;background-color:#FFB8D9;background-image:radial-gradient(rgba(204,29,111,.14) 1px,transparent 1px);background-size:24px 24px}
+  ::selection{background:#CC1D6F;color:#fff}
+  ::-webkit-scrollbar{width:8px}
+  ::-webkit-scrollbar-track{background:#FFB8D9}
+  ::-webkit-scrollbar-thumb{background:#F1A0CB;border-radius:4px}
+  a:focus-visible,button:focus-visible{outline:2px solid #CC1D6F;outline-offset:3px;border-radius:2px}
+  .badge{display:inline-flex;align-items:center;padding:.35rem .8rem;border-radius:9999px;background:#FFFFFF;border:1px solid #F1A0CB;color:#93476B;font-size:.75rem;font-weight:500;transition:all .3s}
+  .badge:hover{border-color:#CC1D6F;color:#CC1D6F}
+  .badge-accent{background:#FFE9F2;color:#CC1D6F;border-color:#F6BEDD}
+  @media (prefers-reduced-motion: reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body class="bg-bg text-plum antialiased">
+
+<header class="fixed top-0 inset-x-0 z-50 backdrop-blur-md bg-bg/85 border-b border-line">
+  <nav class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="#" class="font-mono text-lg font-semibold text-ink flex items-center gap-1.5">
+      tina.ngo()<span class="w-1.5 h-1.5 rounded-full bg-cyan animate-pulse"></span>
+    </a>
+    <div class="hidden md:flex items-center gap-8 text-sm text-muted">
+      <a href="#projets" class="hover:text-ink transition-all duration-300">Projets</a>
+      <a href="#competences" class="hover:text-ink transition-all duration-300">Compétences</a>
+      <a href="#formation" class="hover:text-ink transition-all duration-300">Formation</a>
+      <a href="#contact" class="hover:text-ink transition-all duration-300">Contact</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="CV_Tina_NGO.pdf" download class="text-sm font-medium px-4 py-2 rounded-lg bg-ink text-white hover:opacity-90 transition-all duration-300">
+        <i class="fa-solid fa-download mr-1.5" aria-hidden="true"></i>CV
+      </a>
+      <button id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu" class="md:hidden text-plum hover:text-ink text-lg w-9 h-9 flex items-center justify-center">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-bg px-6 py-4 flex flex-col gap-4 text-sm text-muted">
+    <a href="#projets" class="hover:text-ink">Projets</a>
+    <a href="#competences" class="hover:text-ink">Compétences</a>
+    <a href="#formation" class="hover:text-ink">Formation</a>
+    <a href="#contact" class="hover:text-ink">Contact</a>
+  </div>
+</header>
+
+<main>
+  <section class="max-w-6xl mx-auto px-6 pt-36 md:pt-44 pb-20 md:pb-28">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-line bg-surface text-xs text-muted mb-8">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+      </span>
+      Recherche Stage de fin d'études — 6 mois dès Janvier 2027
+    </div>
+    <h1 class="text-4xl sm:text-5xl md:text-7xl font-bold text-ink tracking-tight leading-[1.05] mb-6 max-w-3xl">
+      Data Analyst &amp; Ingénierie de Flux
+    </h1>
+    <p class="text-base md:text-lg text-plum/80 max-w-2xl leading-relaxed mb-10">
+      Étudiante en double diplôme Master 2 Data Analytics &amp; Digital Marketing au Pôle Léonard de Vinci. Je conçois des pipelines de données automatisés, structure des modèles décisionnels et transforme des données brutes en leviers de performance mesurables.
+    </p>
+    <div class="flex flex-wrap gap-3">
+      <a href="https://www.linkedin.com/in/vankimtina/" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum">
+        <i class="fa-brands fa-linkedin text-ink" aria-hidden="true"></i> LinkedIn
+      </a>
+      <a href="https://github.com/tina-devinci" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum">
+        <i class="fa-brands fa-github text-ink" aria-hidden="true"></i> GitHub
+      </a>
+      <a href="mailto:tina.ngo@edu.devinci.fr" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum">
+        <i class="fa-solid fa-envelope text-ink" aria-hidden="true"></i> E-mail
+      </a>
+    </div>
+  </section>
+
+  <section id="projets" class="max-w-6xl mx-auto px-6 py-20 md:py-28 border-t border-line">
+    <h2 class="text-2xl md:text-3xl font-bold text-ink mb-14">Projets Réalisés</h2>
+
+    <article class="grid lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300 mb-8">
+      <div>
+        <span class="badge badge-accent">Data Engineering &amp; Automatisation</span>
+        <h3 class="text-xl md:text-2xl font-bold text-ink mt-4 mb-3">Pipeline de Prospection &amp; Bounce Check DNS</h3>
+        <p class="text-plum/80 leading-relaxed mb-6">Industrialiser la qualification de contacts RH et sécuriser la délivrabilité sans dépendre d'outils payants.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="badge">Python</span><span class="badge">Pandas</span><span class="badge">Dnspython</span><span class="badge">API DeepSeek</span><span class="badge">SMTP SSL</span>
+        </div>
+        <a href="https://github.com/tina-devinci/data-automation-pipeline" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-plum hover:text-ink transition-all duration-300">
+          Voir le code sur GitHub <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="flex flex-col justify-center gap-4">
+        <div class="rounded-xl overflow-hidden border border-black/10">
+          <div class="flex items-center gap-1.5 px-4 py-2.5 bg-term">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#FF6B81]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#FFD166]"></span><span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+          </div>
+          <div class="bg-term p-5 font-mono text-xs text-cyan leading-loose">
+            <div>Base brute LinkedIn</div>
+            <div>➔ Parsing Pandas</div>
+            <div>➔ Bounce Check MX (DNS)</div>
+            <div>➔ Génération IA (DeepSeek)</div>
+            <div>➔ Routage SMTP SSL</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="p-4 rounded-xl bg-blush border border-line">
+            <div class="text-2xl font-bold text-ink">600</div>
+            <div class="text-[11px] text-muted mt-1">profils analysés</div>
+          </div>
+          <div class="p-4 rounded-xl bg-blush border border-line">
+            <div class="text-2xl font-bold text-ink">35,8%</div>
+            <div class="text-[11px] text-muted mt-1">adresses invalides éliminées</div>
+          </div>
+          <div class="p-4 rounded-xl bg-blush border border-line">
+            <div class="text-2xl font-bold text-ink">0€</div>
+            <div class="text-[11px] text-muted mt-1">coût outils tiers</div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="grid lg:grid-cols-2 gap-8 p-6 md:p-8 rounded-2xl bg-surface border border-line hover:border-ink/50 transition-all duration-300">
+      <div>
+        <span class="badge badge-accent">Machine Learning &amp; Data Processing</span>
+        <h3 class="text-xl md:text-2xl font-bold text-ink mt-4 mb-3">Telco Churn — Préparation &amp; Scoring Prédictif</h3>
+        <p class="text-plum/80 leading-relaxed mb-6">Bâtir un pipeline de traitement robuste sur 7 043 clients et entraîner un modèle de prédiction du désabonnement.</p>
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="badge">Python</span><span class="badge">Scikit-Learn</span><span class="badge">Pandas</span><span class="badge">NumPy</span>
+        </div>
+        <a href="https://github.com/tina-devinci/telco-churn-prediction" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-plum hover:text-ink transition-all duration-300">
+          Voir le code sur GitHub <i class="fa-solid fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="flex flex-col justify-center gap-4">
+        <div class="rounded-xl overflow-hidden border border-black/10">
+          <div class="flex items-center gap-1.5 px-4 py-2.5 bg-term">
+            <span class="w-2.5 h-2.5 rounded-full bg-[#FF6B81]"></span><span class="w-2.5 h-2.5 rounded-full bg-[#FFD166]"></span><span class="w-2.5 h-2.5 rounded-full bg-cyan"></span>
+          </div>
+          <div class="bg-term p-5 font-mono text-xs text-cyan leading-loose">
+            <div>Nettoyage contextuel (TotalCharges)</div>
+            <div>➔ Encodage hybride (Ordinal/OHE)</div>
+            <div>➔ StandardScaler</div>
+            <div>➔ Split stratifié 80/20</div>
+          </div>
+        </div>
+        <div class="grid grid-cols-3 gap-3 text-center">
+          <div class="p-4 rounded-xl bg-blush border border-line">
+            <div class="text-2xl font-bold text-ink">7 043</div>
+            <div class="text-[11px] text-muted mt-1">profils, 100% complétude</div>
+          </div>
+          <div class="p-4 rounded-xl bg-blush border border-line">
+            <div class="text-2xl font-bold text-ink">26,5%</div>
+            <div class="text-[11px] text-muted mt-1">taux de churn préservé</div>
+          </div>
+          <div class="p-4 rounded-xl bg-blush border border-line flex items-center justify-center">
+            <div class="text-[11px] font-semibold text-ink leading-snug">Détection proactive du risque de résiliation</div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <section id="competences" class="max-w-6xl mx-auto px-6 py-20 md:py-28 border-t border-line">
+    <h2 class="text-2xl md:text-3xl font-bold text-ink mb-14">Stack Technique</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="p-6 rounded-2xl bg-surface border border-line">
+        <i class="fa-solid fa-chart-line text-ink text-lg mb-4" aria-hidden="true"></i>
+        <h3 class="text-plum font-semibold mb-4">Langages &amp; Analyse</h3>
+        <ul class="space-y-2 text-sm text-plum/70">
+          <li>Python</li><li>SQL</li><li>Pandas</li><li>NumPy</li><li>Statistiques descriptives</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-surface border border-line">
+        <i class="fa-solid fa-diagram-project text-ink text-lg mb-4" aria-hidden="true"></i>
+        <h3 class="text-plum font-semibold mb-4">Modélisation &amp; Machine Learning</h3>
+        <ul class="space-y-2 text-sm text-plum/70">
+          <li>Scikit-Learn</li><li>Pipelines</li><li>Standardisation</li><li>Encodage Ordinal/One-Hot</li><li>Métriques ROC-AUC</li>
+        </ul>
+      </div>
+      <div class="p-6 rounded-2xl bg-surface border border-line">
+        <i class="fa-solid fa-arrows-spin text-ink text-lg mb-4" aria-hidden="true"></i>
+        <h3 class="text-plum font-semibold mb-4">Flux &amp; Outils</h3>
+        <ul class="space-y-2 text-sm text-plum/70">
+          <li>Dnspython</li><li>API DeepSeek / LLM</li><li>Git</li><li>GitHub</li><li>VS Code</li><li>Google Colab</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="formation" class="max-w-6xl mx-auto px-6 py-20 md:py-28 border-t border-line">
+    <h2 class="text-2xl md:text-3xl font-bold text-ink mb-14">Parcours Académique</h2>
+    <div class="p-8 rounded-2xl bg-surface border border-line flex flex-col md:flex-row gap-6 md:items-center">
+      <div class="w-12 h-12 rounded-xl bg-blush border border-line flex items-center justify-center text-ink text-lg shrink-0">
+        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+      </div>
+      <div>
+        <h3 class="text-lg md:text-xl font-bold text-ink mb-1">Double Diplôme Master 2 Data Analytics &amp; Digital Marketing</h3>
+        <p class="text-muted text-sm mb-3">Pôle Léonard de Vinci — Paris La Défense</p>
+        <p class="text-plum/80 leading-relaxed text-sm max-w-2xl">Profil hybride technico-fonctionnel, à l'intersection de l'ingénierie de données et de la conversion business.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer id="contact" class="border-t border-line">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+    <h2 class="text-2xl md:text-3xl font-bold text-ink mb-3">Discutons de votre prochain projet data.</h2>
+    <p class="text-plum/80 mb-8 max-w-xl">Disponible pour un stage de fin d'études de 6 mois dès janvier 2027.</p>
+    <div class="flex flex-wrap gap-3 mb-16">
+      <a href="https://www.linkedin.com/in/vankimtina/" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-brands fa-linkedin text-ink" aria-hidden="true"></i> LinkedIn</a>
+      <a href="https://github.com/tina-devinci" target="_blank" rel="noopener" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-brands fa-github text-ink" aria-hidden="true"></i> GitHub</a>
+      <a href="mailto:tina.ngo@edu.devinci.fr" class="flex items-center gap-2 px-5 py-3 rounded-lg bg-surface border border-line hover:border-ink transition-all duration-300 text-sm font-medium text-plum"><i class="fa-solid fa-envelope text-ink" aria-hidden="true"></i> tina.ngo@edu.devinci.fr</a>
+    </div>
+    <div class="pt-8 border-t border-line text-xs text-muted">
+      © 2026 Tina NGO — Portfolio Data Analyst
+    </div>
+  </div>
+</footer>
+
+<script>
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', function () {
+    var isHidden = mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!isHidden));
+  });
+  mobileMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+</body>
+</html>
